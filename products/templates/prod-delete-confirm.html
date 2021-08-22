@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Are you sure want to delete?</title>
+  </head>
+  <body>
+    <form method="POST">
+      {% csrf_token %}
+      <h2>Are you sure you want to remove {{ product.description }} ?</h2>
+      <button type="submit">Confirm</button>
+    </form>
+  </body>
+</html>
